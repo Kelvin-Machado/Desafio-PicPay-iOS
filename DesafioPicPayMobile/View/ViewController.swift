@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let contactsTable = ContactsTableViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = #colorLiteral(red: 0.1126654819, green: 0.117790021, blue: 0.1262878478, alpha: 1)
+        
+        self.addChild(contactsTable)
+        view.addSubview(contactsTable.tableView)
     }
 
 

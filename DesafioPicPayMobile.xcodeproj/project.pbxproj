@@ -13,6 +13,8 @@
 		B6544F8E236F3CFC00DA527F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6544F8D236F3CFC00DA527F /* Assets.xcassets */; };
 		B6544F91236F3CFC00DA527F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6544F8F236F3CFC00DA527F /* LaunchScreen.storyboard */; };
 		B6544F9D236F3F6600DA527F /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F9C236F3F6600DA527F /* ContactsTableViewController.swift */; };
+		B6544F9F236F43E900DA527F /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F9E236F43E900DA527F /* Contato.swift */; };
+		B6544FA1236F448500DA527F /* ContatosCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA0236F448500DA527F /* ContatosCelula.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B6544F90236F3CFC00DA527F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6544F92236F3CFC00DA527F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6544F9C236F3F6600DA527F /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		B6544F9E236F43E900DA527F /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		B6544FA0236F448500DA527F /* ContatosCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosCelula.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		B6544F99236F3EED00DA527F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B6544F9E236F43E900DA527F /* Contato.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		B6544F9B236F3F0500DA527F /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				B6544FA0236F448500DA527F /* ContatosCelula.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 				B6544F9D236F3F6600DA527F /* ContactsTableViewController.swift in Sources */,
 				B6544F89236F3CFA00DA527F /* ViewController.swift in Sources */,
 				B6544F85236F3CFA00DA527F /* AppDelegate.swift in Sources */,
+				B6544F9F236F43E900DA527F /* Contato.swift in Sources */,
+				B6544FA1236F448500DA527F /* ContatosCelula.swift in Sources */,
 				B6544F87236F3CFA00DA527F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
