@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AED713847421538E4A7F4086 /* Pods_DesafioPicPayMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35FB40B9EE539B3380DC0A2 /* Pods_DesafioPicPayMobile.framework */; };
 		B6544F85236F3CFA00DA527F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F84236F3CFA00DA527F /* AppDelegate.swift */; };
 		B6544F87236F3CFA00DA527F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F86236F3CFA00DA527F /* SceneDelegate.swift */; };
 		B6544F89236F3CFA00DA527F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F88236F3CFA00DA527F /* ViewController.swift */; };
@@ -40,6 +41,9 @@
 		B6544FA8236F54FB00DA527F /* Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
 		B6544FAA236F558B00DA527F /* RegisterPrimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrimingViewController.swift; sourceTree = "<group>"; };
 		B6544FAC236F57C600DA527F /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		C1A403395624B5096A3E2ABE /* Pods-DesafioPicPayMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayMobile.release.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile.release.xcconfig"; sourceTree = "<group>"; };
+		CE8DF0335AB13B4A03E1C9B6 /* Pods-DesafioPicPayMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayMobile.debug.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		E35FB40B9EE539B3380DC0A2 /* Pods_DesafioPicPayMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioPicPayMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED713847421538E4A7F4086 /* Pods_DesafioPicPayMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32C01CD6FC681D1F36633B5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DF0335AB13B4A03E1C9B6 /* Pods-DesafioPicPayMobile.debug.xcconfig */,
+				C1A403395624B5096A3E2ABE /* Pods-DesafioPicPayMobile.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92FF75BA48D376B912859E5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E35FB40B9EE539B3380DC0A2 /* Pods_DesafioPicPayMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6544F78236F3CFA00DA527F = {
 			isa = PBXGroup;
 			children = (
 				B6544F83236F3CFA00DA527F /* DesafioPicPayMobile */,
 				B6544F82236F3CFA00DA527F /* Products */,
+				32C01CD6FC681D1F36633B5D /* Pods */,
+				92FF75BA48D376B912859E5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6544F95236F3CFC00DA527F /* Build configuration list for PBXNativeTarget "DesafioPicPayMobile" */;
 			buildPhases = (
+				1D71472B30B99E41448A09F3 /* [CP] Check Pods Manifest.lock */,
 				B6544F7D236F3CFA00DA527F /* Sources */,
 				B6544F7E236F3CFA00DA527F /* Frameworks */,
 				B6544F7F236F3CFA00DA527F /* Resources */,
+				60C6BB02F6C2ADCC9EBDF7CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +214,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D71472B30B99E41448A09F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioPicPayMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60C6BB02F6C2ADCC9EBDF7CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6544F7D236F3CFA00DA527F /* Sources */ = {
@@ -338,6 +407,7 @@
 		};
 		B6544F96236F3CFC00DA527F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8DF0335AB13B4A03E1C9B6 /* Pods-DesafioPicPayMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -356,6 +426,7 @@
 		};
 		B6544F97236F3CFC00DA527F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1A403395624B5096A3E2ABE /* Pods-DesafioPicPayMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
