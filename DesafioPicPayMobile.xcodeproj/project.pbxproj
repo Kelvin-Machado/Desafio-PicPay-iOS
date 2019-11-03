@@ -16,6 +16,7 @@
 		B6544F9F236F43E900DA527F /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F9E236F43E900DA527F /* Contato.swift */; };
 		B6544FA1236F448500DA527F /* ContatosCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA0236F448500DA527F /* ContatosCelula.swift */; };
 		B6544FA3236F4FFE00DA527F /* RegisterCCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA2236F4FFE00DA527F /* RegisterCCViewController.swift */; };
+		B6544FA5236F50A300DA527F /* RegisterCCViewControllerEXData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B6544F9E236F43E900DA527F /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		B6544FA0236F448500DA527F /* ContatosCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosCelula.swift; sourceTree = "<group>"; };
 		B6544FA2236F4FFE00DA527F /* RegisterCCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCCViewController.swift; sourceTree = "<group>"; };
+		B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCCViewControllerEXData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				B6544F88236F3CFA00DA527F /* ViewController.swift */,
 				B6544F9C236F3F6600DA527F /* ContactsTableViewController.swift */,
 				B6544FA2236F4FFE00DA527F /* RegisterCCViewController.swift */,
+				B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6544FA5236F50A300DA527F /* RegisterCCViewControllerEXData.swift in Sources */,
 				B6544F9D236F3F6600DA527F /* ContactsTableViewController.swift in Sources */,
 				B6544FA3236F4FFE00DA527F /* RegisterCCViewController.swift in Sources */,
 				B6544F89236F3CFA00DA527F /* ViewController.swift in Sources */,
