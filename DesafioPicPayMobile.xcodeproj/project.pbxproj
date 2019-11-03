@@ -17,6 +17,7 @@
 		B6544FA1236F448500DA527F /* ContatosCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA0236F448500DA527F /* ContatosCelula.swift */; };
 		B6544FA3236F4FFE00DA527F /* RegisterCCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA2236F4FFE00DA527F /* RegisterCCViewController.swift */; };
 		B6544FA5236F50A300DA527F /* RegisterCCViewControllerEXData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */; };
+		B6544FA7236F51D200DA527F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA6236F51D200DA527F /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B6544FA0236F448500DA527F /* ContatosCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosCelula.swift; sourceTree = "<group>"; };
 		B6544FA2236F4FFE00DA527F /* RegisterCCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCCViewController.swift; sourceTree = "<group>"; };
 		B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCCViewControllerEXData.swift; sourceTree = "<group>"; };
+		B6544FA6236F51D200DA527F /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B6544FA0236F448500DA527F /* ContatosCelula.swift */,
+				B6544FA6236F51D200DA527F /* NavigationBar.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				B6544FA3236F4FFE00DA527F /* RegisterCCViewController.swift in Sources */,
 				B6544F89236F3CFA00DA527F /* ViewController.swift in Sources */,
 				B6544F85236F3CFA00DA527F /* AppDelegate.swift in Sources */,
+				B6544FA7236F51D200DA527F /* NavigationBar.swift in Sources */,
 				B6544F9F236F43E900DA527F /* Contato.swift in Sources */,
 				B6544FA1236F448500DA527F /* ContatosCelula.swift in Sources */,
 				B6544F87236F3CFA00DA527F /* SceneDelegate.swift in Sources */,
