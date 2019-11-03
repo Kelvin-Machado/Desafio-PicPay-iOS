@@ -10,9 +10,9 @@
 		B6544F85236F3CFA00DA527F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F84236F3CFA00DA527F /* AppDelegate.swift */; };
 		B6544F87236F3CFA00DA527F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F86236F3CFA00DA527F /* SceneDelegate.swift */; };
 		B6544F89236F3CFA00DA527F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F88236F3CFA00DA527F /* ViewController.swift */; };
-		B6544F8C236F3CFA00DA527F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6544F8A236F3CFA00DA527F /* Main.storyboard */; };
 		B6544F8E236F3CFC00DA527F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6544F8D236F3CFC00DA527F /* Assets.xcassets */; };
 		B6544F91236F3CFC00DA527F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6544F8F236F3CFC00DA527F /* LaunchScreen.storyboard */; };
+		B6544F9D236F3F6600DA527F /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544F9C236F3F6600DA527F /* ContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		B6544F84236F3CFA00DA527F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6544F86236F3CFA00DA527F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B6544F88236F3CFA00DA527F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6544F8B236F3CFA00DA527F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6544F8D236F3CFC00DA527F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6544F90236F3CFC00DA527F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6544F92236F3CFC00DA527F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6544F9C236F3F6600DA527F /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		B6544F83236F3CFA00DA527F /* DesafioPicPayMobile */ = {
 			isa = PBXGroup;
 			children = (
+				B6544F99236F3EED00DA527F /* Model */,
+				B6544F9A236F3EF700DA527F /* View */,
+				B6544F9B236F3F0500DA527F /* View Model */,
+				B6544F98236F3D3200DA527F /* Supporting Files */,
+			);
+			path = DesafioPicPayMobile;
+			sourceTree = "<group>";
+		};
+		B6544F98236F3D3200DA527F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				B6544F84236F3CFA00DA527F /* AppDelegate.swift */,
 				B6544F86236F3CFA00DA527F /* SceneDelegate.swift */,
-				B6544F88236F3CFA00DA527F /* ViewController.swift */,
-				B6544F8A236F3CFA00DA527F /* Main.storyboard */,
 				B6544F8D236F3CFC00DA527F /* Assets.xcassets */,
 				B6544F8F236F3CFC00DA527F /* LaunchScreen.storyboard */,
 				B6544F92236F3CFC00DA527F /* Info.plist */,
 			);
-			path = DesafioPicPayMobile;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6544F99236F3EED00DA527F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6544F9A236F3EF700DA527F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6544F88236F3CFA00DA527F /* ViewController.swift */,
+				B6544F9C236F3F6600DA527F /* ContactsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6544F9B236F3F0500DA527F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +159,6 @@
 			files = (
 				B6544F91236F3CFC00DA527F /* LaunchScreen.storyboard in Resources */,
 				B6544F8E236F3CFC00DA527F /* Assets.xcassets in Resources */,
-				B6544F8C236F3CFA00DA527F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6544F9D236F3F6600DA527F /* ContactsTableViewController.swift in Sources */,
 				B6544F89236F3CFA00DA527F /* ViewController.swift in Sources */,
 				B6544F85236F3CFA00DA527F /* AppDelegate.swift in Sources */,
 				B6544F87236F3CFA00DA527F /* SceneDelegate.swift in Sources */,
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B6544F8A236F3CFA00DA527F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6544F8B236F3CFA00DA527F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6544F8F236F3CFC00DA527F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FXPMLN8LH;
-				INFOPLIST_FILE = DesafioPicPayMobile/Info.plist;
+				INFOPLIST_FILE = "DesafioPicPayMobile/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FXPMLN8LH;
-				INFOPLIST_FILE = DesafioPicPayMobile/Info.plist;
+				INFOPLIST_FILE = "DesafioPicPayMobile/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
