@@ -46,4 +46,65 @@ class ContactsTableViewController: UITableViewController, UISearchBarDelegate {
             }
         }.resume()
     }
+    
+    
+    //MARK: - Setup Table
+    func setupTable() {
+        view.backgroundColor = #colorLiteral(red: 0.1126654819, green: 0.117790021, blue: 0.1262878478, alpha: 1)
+        tableView.separatorStyle = .none
+        self.tableView.register(ContatosCelula.self, forCellReuseIdentifier: "ContatoCelula")
+        tableView.contentInset = UIEdgeInsets(top: 110, left: 0, bottom: 0, right: 0)
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return contatos.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celula = tableView.dequeueReusableCell(withIdentifier: "ContatoCelula", for: indexPath) as! ContatosCelula
+        
+        celula.backgroundColor =  #colorLiteral(red: 0.1126654819, green: 0.117790021, blue: 0.1262878478, alpha: 1)
+        celula.selectionStyle = .none
+        
+        celula.nameView.text = contatos[indexPath.row].name
+        celula.usernameView.text = contatos[indexPath.row].username
+        
+        if let imagemURL = URL(string: contatos[indexPath.row].img){
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imagemURL)
+                if let data = data{
+                    let imagem = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        celula.perfilImgView.image = imagem
+                    }
+                }
+            }
+        }
+        return celula
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 76
+    }
+    
 }
+
+   
+//MARK: - Extensions
+
+extension UIColor {
+    func image(_ size: CGSize = CGSize(width: 1, height: 1)) -> UIImage {
+        return UIGraphicsImageRenderer(size: size).image { rendererContext in
+            self.setFill()
+            rendererContext.fill(CGRect(origin: .zero, size: size))
+        }
+    }
+}
+
+
+
