@@ -19,6 +19,7 @@
 		B6544FA5236F50A300DA527F /* RegisterCCViewControllerEXData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */; };
 		B6544FA7236F51D200DA527F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA6236F51D200DA527F /* NavigationBar.swift */; };
 		B6544FA9236F54FB00DA527F /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA8236F54FB00DA527F /* Lines.swift */; };
+		B6544FAB236F558B00DA527F /* RegisterPrimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FAA236F558B00DA527F /* RegisterPrimingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCCViewControllerEXData.swift; sourceTree = "<group>"; };
 		B6544FA6236F51D200DA527F /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B6544FA8236F54FB00DA527F /* Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
+		B6544FAA236F558B00DA527F /* RegisterPrimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrimingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B6544FA0236F448500DA527F /* ContatosCelula.swift */,
 				B6544FA6236F51D200DA527F /* NavigationBar.swift */,
 				B6544FA8236F54FB00DA527F /* Lines.swift */,
+				B6544FAA236F558B00DA527F /* RegisterPrimingViewController.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				B6544F9F236F43E900DA527F /* Contato.swift in Sources */,
 				B6544FA1236F448500DA527F /* ContatosCelula.swift in Sources */,
 				B6544F87236F3CFA00DA527F /* SceneDelegate.swift in Sources */,
+				B6544FAB236F558B00DA527F /* RegisterPrimingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
