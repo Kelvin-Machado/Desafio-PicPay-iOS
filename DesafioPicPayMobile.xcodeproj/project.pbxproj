@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		B6544FA9236F54FB00DA527F /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FA8236F54FB00DA527F /* Lines.swift */; };
 		B6544FAB236F558B00DA527F /* RegisterPrimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FAA236F558B00DA527F /* RegisterPrimingViewController.swift */; };
 		B6544FAD236F57C600DA527F /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6544FAC236F57C600DA527F /* PaymentViewController.swift */; };
+		B668E5722370639B00F85BA9 /* MyAwesomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B6544FA8236F54FB00DA527F /* Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
 		B6544FAA236F558B00DA527F /* RegisterPrimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPrimingViewController.swift; sourceTree = "<group>"; };
 		B6544FAC236F57C600DA527F /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeViewController.swift; sourceTree = "<group>"; };
 		C1A403395624B5096A3E2ABE /* Pods-DesafioPicPayMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayMobile.release.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile.release.xcconfig"; sourceTree = "<group>"; };
 		CE8DF0335AB13B4A03E1C9B6 /* Pods-DesafioPicPayMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayMobile.debug.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		E35FB40B9EE539B3380DC0A2 /* Pods_DesafioPicPayMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioPicPayMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +66,6 @@
 				CE8DF0335AB13B4A03E1C9B6 /* Pods-DesafioPicPayMobile.debug.xcconfig */,
 				C1A403395624B5096A3E2ABE /* Pods-DesafioPicPayMobile.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -133,6 +134,7 @@
 				B6544FA2236F4FFE00DA527F /* RegisterCCViewController.swift */,
 				B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */,
 				B6544FAC236F57C600DA527F /* PaymentViewController.swift */,
+				B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +272,7 @@
 				B6544F85236F3CFA00DA527F /* AppDelegate.swift in Sources */,
 				B6544FA7236F51D200DA527F /* NavigationBar.swift in Sources */,
 				B6544FAD236F57C600DA527F /* PaymentViewController.swift in Sources */,
+				B668E5722370639B00F85BA9 /* MyAwesomeViewController.swift in Sources */,
 				B6544F9F236F43E900DA527F /* Contato.swift in Sources */,
 				B6544FA1236F448500DA527F /* ContatosCelula.swift in Sources */,
 				B6544F87236F3CFA00DA527F /* SceneDelegate.swift in Sources */,
