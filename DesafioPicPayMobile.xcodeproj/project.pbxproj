@@ -141,8 +141,8 @@
 				B6544FA2236F4FFE00DA527F /* RegisterCCViewController.swift */,
 				B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */,
 				B6544FAC236F57C600DA527F /* PaymentViewController.swift */,
-				B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */,
 				B668E5772370687200F85BA9 /* PaymentPost.swift */,
+				B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
