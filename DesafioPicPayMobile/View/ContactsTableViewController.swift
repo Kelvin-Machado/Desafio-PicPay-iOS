@@ -114,10 +114,39 @@ class ContactsTableViewController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 76
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
+        var contactPay: Contato!
+        let paymentvc = PaymentViewController()
+
+        if ViewController.searching {
+            contactPay = ContactsTableViewController.searchedContacts[indexPath.row]
+            PaymentViewController.contactP = contactPay
+
+        }else{
+            contactPay = contatos[indexPath.row]
+            PaymentViewController.contactP = contactPay
+        }
+        if RegisterCCViewController.existeCartao {
+            navigationController?.pushViewController(paymentvc, animated: true)
+        } else {
+            let registerCC = RegisterPrimingViewController()
+            navigationController?.pushViewController(registerCC, animated: true)
+        }
+        
+    }
+
+          
+       //MARK: - More settings
+       
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let y = -scrollView.contentOffset.y
+        let height = max( y, 0 )
+        imageView?.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: height + UIApplication.shared.statusBarFrame.height)
+    }
+       
 }
 
-   
 //MARK: - Extensions
 
 extension UIColor {
