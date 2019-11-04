@@ -25,6 +25,7 @@
 		B668E5722370639B00F85BA9 /* MyAwesomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */; };
 		B668E574237063E200F85BA9 /* ReciboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E573237063E200F85BA9 /* ReciboViewController.swift */; };
 		B668E5762370647B00F85BA9 /* CreditCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E5752370647B00F85BA9 /* CreditCardData.swift */; };
+		B668E5782370687200F85BA9 /* PaymentPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B668E5772370687200F85BA9 /* PaymentPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeViewController.swift; sourceTree = "<group>"; };
 		B668E573237063E200F85BA9 /* ReciboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciboViewController.swift; sourceTree = "<group>"; };
 		B668E5752370647B00F85BA9 /* CreditCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardData.swift; sourceTree = "<group>"; };
+		B668E5772370687200F85BA9 /* PaymentPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPost.swift; sourceTree = "<group>"; };
 		C1A403395624B5096A3E2ABE /* Pods-DesafioPicPayMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayMobile.release.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile.release.xcconfig"; sourceTree = "<group>"; };
 		CE8DF0335AB13B4A03E1C9B6 /* Pods-DesafioPicPayMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayMobile.debug.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayMobile/Pods-DesafioPicPayMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		E35FB40B9EE539B3380DC0A2 /* Pods_DesafioPicPayMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioPicPayMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 				B6544FA4236F50A300DA527F /* RegisterCCViewControllerEXData.swift */,
 				B6544FAC236F57C600DA527F /* PaymentViewController.swift */,
 				B668E5712370639B00F85BA9 /* MyAwesomeViewController.swift */,
+				B668E5772370687200F85BA9 /* PaymentPost.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B668E5782370687200F85BA9 /* PaymentPost.swift in Sources */,
 				B6544FA5236F50A300DA527F /* RegisterCCViewControllerEXData.swift in Sources */,
 				B6544FA9236F54FB00DA527F /* Lines.swift in Sources */,
 				B6544F9D236F3F6600DA527F /* ContactsTableViewController.swift in Sources */,
