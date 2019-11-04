@@ -18,7 +18,7 @@ class ContactsTableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        setupTable()
+        setupTable()
         downloadJson()
         
     }
@@ -58,7 +58,11 @@ class ContactsTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if ViewController.searching {
+            return ContactsTableViewController.searchedContacts.count
+        } else {
             return contatos.count
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,20 +71,39 @@ class ContactsTableViewController: UITableViewController, UISearchBarDelegate {
         celula.backgroundColor =  #colorLiteral(red: 0.1126654819, green: 0.117790021, blue: 0.1262878478, alpha: 1)
         celula.selectionStyle = .none
         
-        celula.nameView.text = contatos[indexPath.row].name
-        celula.usernameView.text = contatos[indexPath.row].username
-        
-        if let imagemURL = URL(string: contatos[indexPath.row].img){
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: imagemURL)
-                if let data = data{
-                    let imagem = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        celula.perfilImgView.image = imagem
+        if ViewController.searching {
+            celula.nameView.text = ContactsTableViewController.searchedContacts[indexPath.row].name
+            celula.usernameView.text = ContactsTableViewController.searchedContacts[indexPath.row].username
+                
+            if let imagemURL = URL(string: ContactsTableViewController.searchedContacts[indexPath.row].img){
+                DispatchQueue.global().async {
+                    let data = try? Data(contentsOf: imagemURL)
+                    if let data = data{
+                        let imagem = UIImage(data: data)
+                        DispatchQueue.main.async {
+                            celula.perfilImgView.image = imagem
+                        }
+                    }
+                }
+            }
+            
+        }else{
+            celula.nameView.text = contatos[indexPath.row].name
+            celula.usernameView.text = contatos[indexPath.row].username
+                
+            if let imagemURL = URL(string: contatos[indexPath.row].img){
+                DispatchQueue.global().async {
+                    let data = try? Data(contentsOf: imagemURL)
+                    if let data = data{
+                        let imagem = UIImage(data: data)
+                        DispatchQueue.main.async {
+                            celula.perfilImgView.image = imagem
+                        }
                     }
                 }
             }
         }
+            
         return celula
     }
     
