@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     lazy var searchBarView = UISearchBar()
     static var searching = false
     
+    static var creditCardData = CreditCardData()
     static var reciboAppear = false
     
     override func viewDidLoad() {

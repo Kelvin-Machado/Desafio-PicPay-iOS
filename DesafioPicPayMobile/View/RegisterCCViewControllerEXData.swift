@@ -17,6 +17,7 @@ extension RegisterCCViewController {
         defaults.set(expirationDate.text!, forKey: Keys.expiry_date)
         defaults.set(cvv.text!, forKey: Keys.cvv)
         RegisterCCViewController.existeCartao = true
+        passDataToCC()
     }
 
     // Check Save Data
@@ -29,12 +30,19 @@ extension RegisterCCViewController {
         expirationDate.text = expiry_date
         let checkCvv = defaults.value(forKey: Keys.cvv) as? String ?? ""
         cvv.text = checkCvv
+        passDataToCC()
         
         RegisterCCViewController.existeCartao = true
         
         if  numCC.text == "" || holderName.text == "" || expiry_date == "" || cvv.text == "" {
             RegisterCCViewController.existeCartao = false
         }
+    }
+    
+    func passDataToCC(){
+        ViewController.creditCardData.cardNumb = defaults.value(forKey: Keys.card_number) as? String ?? ""
+        ViewController.creditCardData.cvv = defaults.value(forKey: Keys.cvv) as? Int ?? 0
+        ViewController.creditCardData.expiryDate = defaults.value(forKey: Keys.expiry_date) as? String ?? "00/00"
     }
 
 }

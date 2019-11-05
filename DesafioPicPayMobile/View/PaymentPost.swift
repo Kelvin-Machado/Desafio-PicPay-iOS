@@ -21,16 +21,33 @@ extension PaymentViewController {
     
     func aproveTransactions() {
 
-        let parameters = PaymentRequest(card_number:"1111111111111111",
-                                    cvv:789,
-                                    value:79.9,
-                                    expiry_date:"01/18",
-                                    destination_user_id:1002)
+        let parameters = PaymentRequest(card_number:ViewController.creditCardData.cardNumb,
+                                        cvv:ViewController.creditCardData.cvv,
+                                    value:PaymentViewController.amountP,
+                                    expiry_date:ViewController.creditCardData.expiryDate,
+                                    destination_user_id:PaymentViewController.contactP.id)
         
         
         AF.request("http://careers.picpay.com/tests/mobdev/transaction", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default).response { response in
-        debugPrint(response)
+            let imprimir:String = (response.debugDescription)
+            print(imprimir)
+            switch response.result {
+            case .success:
+                debugPrint(response)
+                
+            
+
+               
+                let recibo = ViewController()
+                ViewController.reciboAppear = true
+               self.navigationController?.pushViewController(recibo, animated: true)
+               
+            case .failure:
+                print("Erro")
+            }
+        
         }
         
     }
 }
+

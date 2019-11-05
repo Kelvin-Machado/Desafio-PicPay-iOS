@@ -242,11 +242,10 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
         if let text = amount.text {
             PaymentViewController.amountP = Double(text) ?? 0.0
         }
-        
-        aproveTransactions()
+
         let recibo = ViewController()
-        ViewController.reciboAppear = true
-        navigationController?.pushViewController(recibo, animated: true)
+        aproveTransactions()
+
         
     }
     

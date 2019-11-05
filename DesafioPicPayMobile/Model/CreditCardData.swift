@@ -14,3 +14,12 @@ struct Keys {
     static let expiry_date  = "expiry_date"
     static let holder_name = "holder_name"
 }
+
+
+struct CreditCardData {
+    var cardNumb: String!
+    var cvv:Int!
+    var expiryDate:String!
+}
+
+
