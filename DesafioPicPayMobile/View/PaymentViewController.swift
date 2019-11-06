@@ -43,7 +43,7 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
     let payButton = UIButton()
     
     let keyboardAwareBottomLayoutGuide: UILayoutGuide = UILayoutGuide()
-    fileprivate var keyboardTopAnchorConstraint: NSLayoutConstraint!
+    var keyboardTopAnchorConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +63,7 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         amount.becomeFirstResponder()
     }
+
     
     //MARK: - Keyboard Events
     
