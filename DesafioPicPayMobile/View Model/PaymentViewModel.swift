@@ -92,6 +92,8 @@ extension PaymentViewController {
         amount.attributedPlaceholder = NSAttributedString(string: "0,00",
         attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.5575397611, green: 0.5729063153, blue: 0.6198518276, alpha: 1)])
         
+        amount.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
+        
         amount.clipsToBounds = true
         
         containerAmount.addSubview(dollar)
@@ -100,6 +102,12 @@ extension PaymentViewController {
         
         
         setAmountConstraints()
+    }
+    @objc func myTextFieldDidChange(_ textField: UITextField) {
+
+        if let amountString = textField.text?.currencyInputFormatting() {
+            textField.text = amountString
+        }
     }
 
     func setAmountConstraints(){
@@ -183,14 +191,17 @@ extension PaymentViewController {
     }
 
     @objc func payButtonTapped(){
-
-        if let text = amount.text {
-            PaymentViewController.amountP = Double(text) ?? 0.0
-        }
-
-        aproveTransactions()
-
         
+        if let text = amount.text {
+            if text == "" {
+                PaymentViewController.amountFormated = "0,00"
+            } else {
+                PaymentViewController.amountFormated = text
+            }
+        }
+        
+        
+        aproveTransactions()
     }
 
     func setPayButtonConstraints() {

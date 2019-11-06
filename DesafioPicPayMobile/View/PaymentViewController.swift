@@ -13,6 +13,7 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
     static var contactP = Contato()
     static var ccNameP = ""
     static var amountP = 0.0
+    static var amountFormated = ""
     
     var containerView:UIView = {
         let view = UIView()

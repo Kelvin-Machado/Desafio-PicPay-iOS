@@ -205,7 +205,7 @@ class ReciboViewController: UIViewController {
         ccNameLbl.clipsToBounds = true
         ccNameLbl.addLine(position: .LINE_POSITION_TOP, color: #colorLiteral(red: 0.6391510367, green: 0.6392295957, blue: 0.64344877, alpha: 1), width: 1.0)
         
-        ccValorLbl.text = String("R$ \(PaymentViewController.amountP)")
+        ccValorLbl.text = String("R$ \(PaymentViewController.amountFormated)")
         ccValorLbl.font = UIFont(name:"Helvetica Neue", size: 14)
         ccValorLbl.backgroundColor = #colorLiteral(red: 0.1126654819, green: 0.117790021, blue: 0.1262878478, alpha: 1)
         ccValorLbl.textAlignment = .right
@@ -220,7 +220,7 @@ class ReciboViewController: UIViewController {
         totalLbl.clipsToBounds = true
         totalLbl.addLine(position: .LINE_POSITION_TOP, color: #colorLiteral(red: 0.6391510367, green: 0.6392295957, blue: 0.64344877, alpha: 1), width: 1.0)
         
-        totalValorLbl.text = String("R$ \(PaymentViewController.amountP)")
+        totalValorLbl.text = String("R$ \(PaymentViewController.amountFormated)")
         totalValorLbl.font = UIFont(name:"Helvetica Neue-Bold", size: 16)
         totalValorLbl.backgroundColor = #colorLiteral(red: 0.1126654819, green: 0.117790021, blue: 0.1262878478, alpha: 1)
         totalValorLbl.textColor = #colorLiteral(red: 0.6391510367, green: 0.6392295957, blue: 0.64344877, alpha: 1)
