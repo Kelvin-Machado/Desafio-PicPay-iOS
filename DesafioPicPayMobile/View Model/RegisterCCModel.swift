@@ -64,12 +64,18 @@ extension RegisterCCViewController {
         attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.5575397611, green: 0.5729063153, blue: 0.6198518276, alpha: 1)])
 
         numCC.addLine(position: .LINE_POSITION_BOTTOM, color: #colorLiteral(red: 0.5575397611, green: 0.5729063153, blue: 0.6198518276, alpha: 1), width: 1.0)
-
+        
+        self.numCC.addTarget(self, action: #selector(didChangeText(textField:)), for: .editingChanged)
         
         containerView.addSubview(numCCLbl)
         containerView.addSubview(numCC)
         setupNumCCConstraints()
     }
+    @objc func didChangeText(textField:UITextField) {
+        textField.text = self.modifyCreditCardString(creditCardString: textField.text!)
+    }
+    
+
     
     func setupNumCCConstraints() {
                 
@@ -139,9 +145,9 @@ extension RegisterCCViewController {
         expirationDate.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         expirationDate.attributedPlaceholder = NSAttributedString(string: "Vencimento",
         attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.5575397611, green: 0.5729063153, blue: 0.6198518276, alpha: 1)])
+        
 
         expirationDate.addLine(position: .LINE_POSITION_BOTTOM, color: #colorLiteral(red: 0.5575397611, green: 0.5729063153, blue: 0.6198518276, alpha: 1), width: 1.0)
-
         
         containerView.addSubview(expirationDateLbl)
         containerView.addSubview(expirationDate)

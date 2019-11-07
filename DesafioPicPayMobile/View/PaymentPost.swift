@@ -21,7 +21,7 @@ extension PaymentViewController {
     
     func aproveTransactions() {
 
-        let parameters = PaymentRequest(card_number:ViewController.creditCardData.cardNumb,
+        let parameters = PaymentRequest(card_number:ViewController.creditCardRaw.cardNumb,
                                         cvv:ViewController.creditCardData.cvv,
                                     value:PaymentViewController.amountP,
                                     expiry_date:ViewController.creditCardData.expiryDate,

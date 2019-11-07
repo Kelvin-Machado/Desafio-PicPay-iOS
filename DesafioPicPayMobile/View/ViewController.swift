@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     static var searching = false
     
     static var creditCardData = CreditCardData()
+    static var creditCardRaw = CreditCardData()
     static var reciboAppear = false
     
     override func viewDidLoad() {
