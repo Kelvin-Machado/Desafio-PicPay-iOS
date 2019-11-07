@@ -30,8 +30,8 @@ extension RegisterCCViewController {
         holderName.text = holder_name
         let expiry_date = defaults.value(forKey: Keys.expiry_date) as? String ?? ""
         expirationDate.text = expiry_date
-        let checkCvv = defaults.value(forKey: Keys.cvv) as? String ?? ""
-        cvv.text = checkCvv
+        let checkCvv = defaults.integer(forKey: Keys.cvv)
+        cvv.text = String(checkCvv)
         passDataToCC()
         
         RegisterCCViewController.existeCartao = true
@@ -43,11 +43,10 @@ extension RegisterCCViewController {
     
     func passDataToCC(){
         ViewController.creditCardData.cardNumb = defaults.value(forKey: Keys.card_number) as? String ?? ""
-        ViewController.creditCardData.cvv = defaults.value(forKey: Keys.cvv) as? Int ?? 0
+        ViewController.creditCardData.cvv = defaults.integer(forKey: Keys.cvv)
         ViewController.creditCardData.expiryDate = defaults.value(forKey: Keys.expiry_date) as? String ?? "00/00"
         
         ViewController.creditCardRaw.cardNumb = defaults.value(forKey: Keys.card_number_raw) as? String ?? ""
-        ViewController.creditCardRaw.expiryDate = defaults.value(forKey: Keys.expiry_date_raw) as? String ?? ""
     }
 
 }

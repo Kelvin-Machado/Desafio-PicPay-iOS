@@ -28,7 +28,10 @@ extension String {
         amountWithPrefix = regex.stringByReplacingMatches(in: amountWithPrefix, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count), withTemplate: "")
 
         let double = (amountWithPrefix as NSString).doubleValue
+        
+        // save the raw value of amount
         PaymentViewController.amountP = double / 100
+        
         number = NSNumber(value: (double / 100))
 
         // if first number is 0 or all numbers were deleted
@@ -45,7 +48,7 @@ extension RegisterCCViewController {
 //    MARK: - Formats Credit Card Number
     func modifyCreditCardString(creditCardString : String) -> String {
         let trimmedString = creditCardString.components(separatedBy: .whitespaces).joined()
-        ViewController.creditCardRaw.cardNumb = trimmedString
+        ViewController.creditCardRaw.cardNumb = trimmedString //save the raw Credit Card number
         let arrOfCharacters = Array(trimmedString)
         var modifiedCreditCardString = ""
 
