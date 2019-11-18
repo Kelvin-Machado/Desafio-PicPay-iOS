@@ -1,5 +1,5 @@
 //
-//  PaymentViewModel.swift
+//  PaymentViewDesign.swift
 //  DesafioPicPayMobile
 //
 //  Created by Kelvin Batista Machado on 05/11/19.
